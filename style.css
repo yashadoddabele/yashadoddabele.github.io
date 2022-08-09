@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#message {
+	margin: 40px auto;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+#content {
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #787db5;
+	color: #262626;
+	border-radius: 0;
+	border: 5px solid rgb(193, 193, 193);
+	width: 50%;
+	padding: 5px 10px;
+	margin: 0 auto;
+	overflow-y: auto;
+	height: 100px;
+	-moz-tab-size: 4;
+	-webkit-tab-size: 4;
+	tab-size: 4;
+}
