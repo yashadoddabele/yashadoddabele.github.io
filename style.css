@@ -8,14 +8,10 @@ body {
     margin: 40px auto;
 	width: 75%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     border-radius: 0;
 	border: 5px solid rgb(125, 111, 236);
-    -moz-tab-size: 4;
-	-webkit-tab-size: 4;
-	tab-size: 4;
     background-color: #d2f9ff;
 }
 #message {
@@ -24,6 +20,5 @@ body {
     font-weight: bold;
     font-size: 25px;
 	padding: 5px 10px;
-	overflow-y: auto;
 	height: 50px;
 }
