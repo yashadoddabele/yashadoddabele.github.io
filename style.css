@@ -12,9 +12,12 @@ body {
     align-items: center;
     justify-content: flex-start;
 	font-family: 'Courier New', Courier, monospace;
+    background-color: #dbdbdb;
 	color: #191d37;
 	border-radius: 0;
-	border: 5px solid rgb(193, 193, 193);
+	border: 5px solid rgb(125, 111, 236);
+    font-weight: bold;
+    font-size: 14px;
 	padding: 5px 10px;
 	overflow-y: auto;
 	height: 100px;
