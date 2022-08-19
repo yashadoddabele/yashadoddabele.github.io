@@ -127,6 +127,7 @@ nav img {
     }
     .popup-digital img {
         max-width: 340px;
+        max-height: 400px;
         margin-top: 130px;
     }
 }
@@ -159,13 +160,14 @@ nav img {
     text-align: center;
     flex-basis: 100%;
 }
-.digital h3{
-    font-size: 23px;
+.gallery h3{
+    font-size: 30px;
     color:  rgb(229, 229, 235);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100vh;
 }
 .digital {
-    margin-top: 100vh;
+    margin-top: 5vh;
     gap: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +194,6 @@ nav img {
     top: 0;
     left: 0;
     background: rgba(192, 185, 211, 0.9);
-    background-opacity: 0.5;
     height: 100%;
     width: 100%;
     z-index: 100%;
