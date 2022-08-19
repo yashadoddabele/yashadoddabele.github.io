@@ -136,7 +136,7 @@ nav img {
     }
 }
 .art-text{
-    /*background-image: linear-gradient(rgba(11, 11, 17, 0.7), rgba(11, 11, 17, 0.7)), url(images/intelsplash.png);*/
+    background-image: linear-gradient(rgba(11, 11, 17, 0.7), rgba(11, 11, 17, 0.7)), url(images/intelsplash.png);
     background-position: center;
     background-size: cover;
     width: 100%;
