@@ -49,6 +49,31 @@
                 <span>&times;</span>
                 <img src="images/intelsplash.png">
             </div>
+            <h4>traditional</h4>
+            <div class="traditional">
+                <div class="pics2">
+                    <img src="images/AP1.JPG">
+                    </div>
+                    <div class="pics2">
+                    <img src="images/AP2.jpg">
+                    </div>
+                    <div class="pics2">
+                    <img src="images/AP3.jpg">
+                    </div>
+                    <div class="pics2">
+                    <img src="images/AP4.jpg">
+                    </div>
+                    <div class="pics2">
+                    <img src="images/AP5.jpg">
+                    </div>
+                    <div class="pics2">
+                    <img src="images/AP8.jpg">
+                    </div>
+            </div>
+            <div class="popup-traditional">
+                <span>&times;</span>
+                <img src="images/AP1.jpg">
+            </div>
         </div>
         <script> 
         document.querySelectorAll('.digital img').forEach(image =>{
@@ -59,6 +84,15 @@
         })
         document.querySelector('.popup-digital span').onclick = () => {
             document.querySelector('.popup-digital').style.display = 'none';
+        }
+        document.querySelectorAll('.traditional img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup-traditional').style.display = 'block';
+                document.querySelector('.popup-traditional img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup-traditional span').onclick = () => {
+            document.querySelector('.popup-traditional').style.display = 'none';
         }
         </script>
     </body>
