@@ -25,16 +25,41 @@
         </section>
         <div class="gallery">
             <div class="digital">
-                <h3>digital</h3>
-                <div class="pics">
+                <h3></h3>
+                    <div class="pics">
                     <img src="images/intelsplash.png">
+                    </div>
+                    <div class="pics">
                     <img src="images/p1.jpg">
+                    </div>
+                    <div class="pics">
                     <img src="images/Bitter Ambrosia.JPG">
-                    <img src="images/An Old Friend.JPG">
+                    </div>
+                    <div class="pics">
+                    <img src="images/1An Old Friend.jpg">
+                    </div>
+                    <div class="pics">
                     <img src="images/Home Beyond.JPG">
+                    </div>
+                    <div class="pics">
                     <img src="images/Master Assassin.JPG">
-                </div>
+                    </div>
             </div>
-        </section>
+            <div class="popup-digital">
+                <span>&times;</span>
+                <img src="images/intelsplash.png">
+            </div>
+        </div>
+        <script> 
+        document.querySelectorAll('.digital img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup-digital').style.display = 'block';
+                document.querySelector('.popup-digital img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup-digital span').onclick = () => {
+            document.querySelector('.popup-digital').style.display = 'none';
+        }
+        </script>
     </body>
 </html>
