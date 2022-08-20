@@ -15,7 +15,7 @@ body {
     background-size: cover;
     position: absolute;
     display: flex;
-    margin-top: -3vh;
+    margin-top: -5.5vh;
 }
 div.logo{
     text-align: center;
@@ -153,7 +153,7 @@ nav img {
 .art-text h1{
     font-size: 45px;
     font-style: normal;
-    margin-top: 20vh;
+    margin-top: 30vh;
 }
 .art-text p{
     font-size: 20px;
