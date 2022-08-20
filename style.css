@@ -105,7 +105,7 @@ nav img {
 .hero-btn:hover::after{
     transition: 0.5s;
 }
-@media(max-width: 700px) {
+@media(max-device-width: 700px) {
     .navigation ul li{
         display: inline-block;
         text-align: center;
@@ -155,18 +155,20 @@ nav img {
         max-height: 60vh;
         margin-top: 11vh;
         text-align: center;
-        position: relative;;
+        justify-content: center;
     }
-    .art-text h1 {
-        font-size: 30px;
-        position: relative;
+    .art-text h1{
+        font-size: 30px !important;
+        font-style: normal;
+        text-align: center;
     }
-    .art-text p {
-        font-size: 16px;
-        margin-left: 5vh;
-        margin-right: 5vh;
+    .art-text p{
+        font-size: 17px !important;
+        text-align: center;
         color:  rgb(229, 229, 235);
-        position: relative;
+    }
+    .gallery h3 {
+        margin-top: 80vh !important;
     }
     .digital {
         gap: 9px;
@@ -418,6 +420,14 @@ nav img {
     width: auto;
     height: 85%;
     object-fit: cover;
+}
+.code-text h1 {
+    font-size: 45px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(229, 229, 235);
+    text-align: center;
+    margin-top: 7vh;
 }
 .footer{
     width: 100%;
