@@ -74,6 +74,22 @@
                 <span>&times;</span>
                 <img src="images/AP1.jpg">
             </div>
+            <h5>from the sketchbook</h5>
+            <div class="sketch">
+                <div class="pics3">
+                    <img src="images/dec9.jpg">
+                    </div>
+                    <div class="pics3">
+                    <img src="images/95.jpg">
+                    </div>
+                    <div class="pics3">
+                    <img src="images/squid.jpg">
+                    </div>
+            </div>
+            <div class="popup-sketch">
+                <span>&times;</span>
+                <img src="images/dec9.jpg">
+            </div>
         </div>
         <script> 
         document.querySelectorAll('.digital img').forEach(image =>{
@@ -93,6 +109,15 @@
         })
         document.querySelector('.popup-traditional span').onclick = () => {
             document.querySelector('.popup-traditional').style.display = 'none';
+        }
+        document.querySelectorAll('.sketch img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup-sketch').style.display = 'block';
+                document.querySelector('.popup-sketch img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup-sketch span').onclick = () => {
+            document.querySelector('.popup-sketch').style.display = 'none';
         }
         </script>
     </body>
