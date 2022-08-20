@@ -4,7 +4,6 @@ body {
     background-color:rgb(33, 30, 47);
 }
 .header {
-    height: 10vh;
     width: 100%;
     position: relative;
     background-color: rgb(33, 30, 47);
@@ -68,7 +67,7 @@ nav img {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 83vh;
+    height: 63vh;
     color: rgb(229, 229, 235);
     position: relative;
     top: 0%;
@@ -83,7 +82,7 @@ nav img {
     margin-top: 20vh;
 }
 .home-text p {
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px 0 20px;
     color:  rgb(229, 229, 235);
 }
@@ -93,6 +92,7 @@ nav img {
     color: #fff;
     padding: 15px 50px;
     font-size: 17px;
+    text-align: center;
     background: rgb(94, 84, 125);
     position: relative;
     width: calc(7% - 4px);
@@ -106,35 +106,115 @@ nav img {
     transition: 0.5s;
 }
 @media(max-width: 700px) {
-    .text-box h1{
-        font-size: 17px;
-    }
     .navigation ul li{
-        display: block;
-        text-align: right;
-        margin: none;
+        display: inline-block;
+        text-align: center;
     }
     .navigation {
         flex: 1;
-        text-align: right;
+        text-align: center;
         top: 0;
-        right: -200px;
+        margin-left: -5vh;
+    }
+    .header video {
+        width: 100%;
+        height: 60vh;
+        margin-top: -1.5vh;
+    }
+    .home-text {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        margin-top: -13vh;
+        align-items: center;
+        position: relative;
     }
     .home-text h1 {
         font-size: 30px;
     }
     .home-text p {
-        font-size: 17px;
-        margin: 10px 0 15px;
+        font-size: 16px;
+        margin-left: 5vh;
+        margin-right: 5vh;
         color:  rgb(229, 229, 235);
+    }
+    .hero-btn {
+        padding: 13px 40px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .footer {
+        max-height: 4vh;
+        justify-content: center;
+        margin-top: -10vh;
+    }
+    .art-text {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        max-height: 60vh;
+        margin-top: 11vh;
+        text-align: center;
+        position: relative;;
+    }
+    .art-text h1 {
+        font-size: 30px;
+        position: relative;
+    }
+    .art-text p {
+        font-size: 16px;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        color:  rgb(229, 229, 235);
+        position: relative;
+    }
+    .digital {
+        gap: 9px;
+    }
+    .pics img {
+        max-width: 170px;
+        max-height: 170px;
     }
     .popup-digital {
         align-items: center;
     }
     .popup-digital img {
-        max-width: 340px;
-        max-height: 400px;
+        display: flex;
+        max-width: auto;
+        max-height: 300px;
         margin-top: 130px;
+    }
+    .pics2 img {
+        max-width: 170px;
+        max-height: 170px;
+    }
+    .popup-traditional {
+        align-items: center;
+    }
+    .popup-traditional img {
+        display: flex;
+        max-width: auto;
+        max-height: 300px;
+        margin-top: 130px;
+    }
+    .pics3 img {
+        max-width: 170px;
+        max-height: 170px;
+    }
+    .popup-sketch {
+        align-items: center;
+    }
+    .popup-sketch img {
+        display: flex;
+        width: auto;
+        max-height: 300px;
+        margin-top: 130px;
+    }
+    .footer h2 {
+        font-size: 14px;
+    }
+    .footer img {
+        max-width: 120px;
     }
 }
 .art-text{
@@ -157,7 +237,7 @@ nav img {
     margin-top: 30vh;
 }
 .art-text p{
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px 0 20px;
     color:  rgb(229, 229, 235);
 }
@@ -341,22 +421,22 @@ nav img {
 }
 .footer{
     width: 100%;
-    height: 15vh;
+    height: 6vh;
+    margin-top: 6vh;
     text-align: center;
     padding: 30px 0px;
-    color:rgb(94, 84, 125);
+    background-color:rgb(94, 84, 125);
 }
 .footer h2{
-    margin-bottom: 20px;
-    margin-top: 1px;
+    margin-bottom: 2vh;
+    margin-top: -1.4vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
     color: rgb(229, 229, 235); 
-    margin-bottom: 100vh;
     text-align: center;
 }
 .footer img {
+    margin-top: -3.5vh;
     align-items: center;
-    margin-bottom: 100vh;
-    width: 150px;
+    width: 139px;
 }
