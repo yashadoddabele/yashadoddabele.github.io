@@ -220,6 +220,9 @@ nav img {
         font-size: 30px !important ;
         text-align: center;
     }
+    .codetext {
+        align-items: center;
+    }
     .codebox p {
         font-size: 17px !important;
     }
