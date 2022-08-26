@@ -160,6 +160,7 @@ nav img {
     .art-text h1{
         font-size: 30px !important;
         font-style: normal;
+        margin-top: 20vh !important;
         text-align: center;
     }
     .art-text p{
@@ -198,10 +199,12 @@ nav img {
         max-width: auto;
         max-height: 300px;
         margin-top: 130px;
+        -webkit-touch-callout:none;
     }
     .pics3 img {
         max-width: 170px;
         max-height: 170px;
+        -webkit-touch-callout:none;
     }
     .popup-sketch {
         align-items: center;
@@ -211,12 +214,24 @@ nav img {
         width: auto;
         max-height: 300px;
         margin-top: 130px;
+        -webkit-touch-callout:none;
+    }
+    .code-text h1 {
+        font-size: 30px !important ;
+        text-align: center;
+    }
+    .codebox p {
+        font-size: 17px !important;
+    }
+    .linkedin {
+        font-size: 17px !important
     }
     .footer h2 {
         font-size: 14px;
     }
     .footer img {
         max-width: 120px;
+        -webkit-touch-callout:none;
     }
 }
 .art-text{
@@ -272,6 +287,8 @@ nav img {
     height: 400px;
     object-fit: cover;
     transition: 0.2s; 
+    pointer-events: none;
+    -webkit-touch-callout: none;
 }
 .pics:hover img {
     border: 5px solid rgb(117, 97, 177);
@@ -421,6 +438,9 @@ nav img {
     height: 85%;
     object-fit: cover;
 }
+.code-text {
+    align-items: center;
+}
 .code-text h1 {
     font-size: 45px;
     font-style: normal;
@@ -428,6 +448,38 @@ nav img {
     color:  rgb(229, 229, 235);
     text-align: center;
     margin-top: 7vh;
+}
+.codebox {
+    background-color: rgb(229, 229, 235);
+    border: 3px solid rgb(229, 229, 235);
+    padding: 7px 7px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-basis: 31%;
+    align-items: center;
+}
+.codebox p {
+    font-size: 26px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(94, 84, 125);
+    text-align: center;
+    margin-top: 3vh;
+}
+.linkedin {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(94, 84, 125);
+    font-size: 26px;
+    cursor: pointer;
+}
+.linkedin:hover{
+   color:rgb(117, 97, 177)
+}
+.linkedin:hover::after{
+    transition: 0.5s;
 }
 .footer{
     width: 100%;
