@@ -290,9 +290,8 @@ nav img {
     height: 400px;
     object-fit: cover;
     transition: 0.2s; 
-    pointer-events: none;
-    -webkit-touch-callout: none;
 }
+
 .pics:hover img {
     border: 5px solid rgb(117, 97, 177);
 }
