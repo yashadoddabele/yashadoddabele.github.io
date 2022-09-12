@@ -440,6 +440,35 @@ nav img {
     height: 85%;
     object-fit: cover;
 }
+.animations {
+    margin-top: 5vh;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pics4 video {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    transform: translate(30%, 0%);
+    border: 5px solid rgb(229, 225, 240);
+    display: flex;
+    margin-top: -2.5vh;
+}
+.gallery h6 {
+    font-size: 30px;
+    color:  rgb(229, 229, 235);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20vh;
+}
+.pics4 {
+    cursor: pointer;
+}
+.pics4:hover video {
+    border: 5px solid rgb(117, 97, 177);
+}
 .code-text {
     align-items: center;
 }
@@ -483,6 +512,7 @@ nav img {
 .linkedin:hover::after{
     transition: 0.5s;
 }
+
 .footer{
     width: 100%;
     height: 6vh;
