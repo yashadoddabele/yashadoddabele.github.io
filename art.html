@@ -14,7 +14,7 @@
                 <div class ="navigation">
                     <ul>
                         <li><a href ="index.html"> home</a></li>
-                        <li><a href ="art.html"> art</a></li>
+                        <li><a href =""> art</a></li>
                         <li><a href ="code.html"> code</a></li>
                     </ul>
                 </div>
@@ -25,7 +25,7 @@
                 most interested in digital art and animation.</p>
         </div>
         </section>
-        <div class="gallery">
+        <div class="gallery">    
             <h3>digital</h3>
             <div class="digital">
                     <div class="pics">
@@ -57,7 +57,23 @@
                 <span>&times;</span>
                 <img src="images/intelsplash.png">
             </div>
-            <h4>traditional</h4>
+            <p><b>design</b></p>
+            <div class="design">
+                <div class="pics5">
+                    <img src="images/bench_final.png">
+                </div>
+                <div class="pics5">
+                    <img src="images/sevapng.png">
+                </div>
+                <div class="pics5">
+                    <img src="images/mayuri2.png">
+                </div>
+            </div>
+            <div class="popup-design">
+                <span>&times;</span>
+                <img src="images/bench_final.png">
+            </div>
+            <p><b>traditional</b></p>
             <div class="traditional">
                 <div class="pics2">
                     <img src="images/AP1.jpg">
@@ -82,7 +98,7 @@
                 <span>&times;</span>
                 <img src="images/AP1.jpg">
             </div>
-            <h5>from the sketchbook</h5>
+            <p><b>from the sketchbook</b></p>
             <div class="sketch">
                 <div class="pics3">
                     <img src="images/dec9.jpg">
@@ -98,7 +114,7 @@
                 <span>&times;</span>
                 <img src="images/dec9.jpg">
             </div>
-            <h6> animation reel (2021) </h6>
+            <p> <b>animation reel (2021)</b></p>
             <div class="animations">
                 <div class="pics4">
                 <video playsinline width="100" controls="controls" preload="none" onclick="this.play()"> 
@@ -116,6 +132,15 @@
         })
         document.querySelector('.popup-digital span').onclick = () => {
             document.querySelector('.popup-digital').style.display = 'none';
+        }
+        document.querySelectorAll('.design img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup-design').style.display = 'block';
+                document.querySelector('.popup-design img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup-design span').onclick = () => {
+            document.querySelector('.popup-design').style.display = 'none';
         }
         document.querySelectorAll('.traditional img').forEach(image =>{
             image.onclick = () => {
