@@ -170,6 +170,12 @@ nav img {
     }
     .gallery h3 {
         margin-top: 80vh !important;
+        text-align: left;
+    }
+    .gallery p {
+        width: 40% !important;  
+        padding: 15px 15px;
+        align-items: center;
     }
     .digital {
         gap: 9px;
@@ -253,7 +259,7 @@ nav img {
     }
 }
 .art-text{
-    background-image: linear-gradient(rgba(11, 11, 17, 0.7), rgba(11, 11, 17, 0.7)), url(images/intelsplash.png);
+    background-image: linear-gradient(rgba(11, 11, 17, 0.7), rgba(11, 11, 17, 0.7)), url(images/intelsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -543,6 +549,17 @@ nav img {
     color:  rgb(229, 229, 235);
     text-align: center;
     margin-top: 7vh;
+    background-color:rgb(94, 84, 125);
+    padding: 20px 20px;
+}
+.code-text p {
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(229, 229, 235);
+    margin-left: 15%;
+    text-align: left;
+    margin-top: 7vh;
 }
 .codebox {
     background-color: rgb(229, 229, 235);
@@ -556,12 +573,33 @@ nav img {
     align-items: center;
 }
 .codebox p {
-    font-size: 26px;
+    font-size: 22px;
     font-style: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:  rgb(94, 84, 125);
-    text-align: center;
+    text-align: left;
     margin-top: 3vh;
+    margin-left: 3%;
+}
+.researchbox {
+    background-color: rgb(229, 229, 235);
+    border: 3px solid rgb(229, 229, 235);
+    padding: 7px 7px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-basis: 31%;
+    align-items: center;
+}
+.researchbox p {
+    font-size: 22px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  rgb(94, 84, 125);
+    text-align: left;
+    margin-top: 3vh;
+    margin-left: 3%;
 }
 .linkedin {
     text-decoration: none;
