@@ -10,13 +10,12 @@ body {
 }
 .header video {
     width: 100%;
-    height: 83vh;
+    height: 80vh;
     object-fit: cover;
     background-size: cover;
     background-position: center;
     position: absolute;
     display: flex;
-    margin-top: -2.5vh;
 }
 div.logo{
     text-align: center;
@@ -263,8 +262,8 @@ nav img {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 83vh;
-    top: -32.3vh;
+    height: 80vh;
+    top: -30vh;
     left: 50%;
     transform: translate(-50%, 50%);
     color: rgb(229, 229, 235);
@@ -274,13 +273,16 @@ nav img {
 }
 .art-text h1{
     font-size: 45px;
+    text-align: center;
     font-style: normal;
     margin-top: 30vh;
+    max-height: 60vh;
 }
 .art-text p{
     font-size: 24px;
     margin: 10px 0 20px;
     color:  rgb(229, 229, 235);
+    margin-top: -2vh;
 }
 .gallery{
     text-align: center;
@@ -541,6 +543,20 @@ nav img {
 }
 .code-text {
     align-items: center;
+    background-image: linear-gradient(rgba(11, 11, 17, 0.7), rgba(11, 11, 17, 0.7)), url(images/pinkmtn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 7vh;
+    /* top: -32.3vh;
+    left: 50%;
+    position: absolute; */
+    text-align: center;
+    /* transform: translate(-50%, 50%); */
 }
 .code-text h1 {
     font-size: 45px;
@@ -548,72 +564,66 @@ nav img {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:  rgb(229, 229, 235);
     text-align: center;
-    margin-top: 7vh;
-    background-color:rgb(94, 84, 125);
-    padding: 20px 20px;
+    margin-top: 30vh;
+    max-height: 60vh;
 }
 .code-text p {
-    font-size: 30px;
+    font-size: 24px;
     font-style: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:  rgb(229, 229, 235);
-    margin-left: 15%;
-    text-align: left;
-    margin-top: 7vh;
+    text-align: center;
+    margin-top: -2vh;
 }
 .codebox {
-    background-color: rgb(229, 229, 235);
-    border: 3px solid rgb(229, 229, 235);
-    padding: 7px 7px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    flex-basis: 31%;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8);  */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto; 
+    margin-left: auto;
+    margin-right: auto;
 }
-.codebox p {
-    font-size: 22px;
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; 
+    width: 100%;
+}
+.image-container img {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+.image-container:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.caption {
+    font-size: 15px;
     font-style: normal;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:  rgb(94, 84, 125);
-    text-align: left;
-    margin-top: 3vh;
-    margin-left: 3%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffff;
+    color: rgb(117, 97, 177);
+    padding: 8px;
 }
-.researchbox {
-    background-color: rgb(229, 229, 235);
-    border: 3px solid rgb(229, 229, 235);
-    padding: 7px 7px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    flex-basis: 31%;
-    align-items: center;
-}
-.researchbox p {
-    font-size: 22px;
-    font-style: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:  rgb(94, 84, 125);
-    text-align: left;
-    margin-top: 3vh;
-    margin-left: 3%;
-}
-.linkedin {
+.image-container a {
+    display: block;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:  rgb(94, 84, 125);
-    font-size: 26px;
-    cursor: pointer;
+    color: inherit;
 }
-.linkedin:hover{
-   color:rgb(117, 97, 177)
-}
-.linkedin:hover::after{
-    transition: 0.5s;
-}
+
 .footer{
     width: 100%;
     height: 6vh;
